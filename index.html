@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>簡易加減乘除計算機</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="calculator">
+    <header>
+      <h1>簡易加減乘除計算機</h1>
+      <p>輸入兩個數字，選擇運算即可得到結果。</p>
+    </header>
+
+    <form id="calc-form" class="calc-form" autocomplete="off">
+      <label class="field">
+        <span>數字 A</span>
+        <input id="input-a" type="number" inputmode="decimal" step="any" required />
+      </label>
+
+      <label class="field">
+        <span>運算</span>
+        <select id="operator" required>
+          <option value="add">＋ 加法</option>
+          <option value="subtract">－ 減法</option>
+          <option value="multiply">× 乘法</option>
+          <option value="divide">÷ 除法</option>
+        </select>
+      </label>
+
+      <label class="field">
+        <span>數字 B</span>
+        <input id="input-b" type="number" inputmode="decimal" step="any" required />
+      </label>
+
+      <div class="actions">
+        <button type="submit">計算</button>
+        <button type="button" id="reset">清除</button>
+      </div>
+    </form>
+
+    <section class="result" aria-live="polite">
+      <h2>結果</h2>
+      <p id="result">請輸入數字並選擇運算。</p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
