@@ -1,0 +1,103 @@
+:root {
+  color-scheme: light;
+  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  background-color: #f5f7fb;
+  color: #1f2933;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.calculator {
+  width: min(520px, 100%);
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 20px 45px rgba(24, 48, 85, 0.15);
+}
+
+header h1 {
+  margin: 0 0 8px;
+  font-size: 1.6rem;
+}
+
+header p {
+  margin: 0 0 20px;
+  color: #4b5563;
+}
+
+.calc-form {
+  display: grid;
+  gap: 16px;
+}
+
+.field {
+  display: grid;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.field input,
+.field select {
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+}
+
+button {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+button#reset {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.result {
+  margin-top: 24px;
+  padding: 16px;
+  background: #f8fafc;
+  border-radius: 12px;
+}
+
+.result h2 {
+  margin: 0 0 6px;
+  font-size: 1.1rem;
+}
+
+.result p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #1f2933;
+}
+
+.result p.error {
+  color: #b91c1c;
+}
